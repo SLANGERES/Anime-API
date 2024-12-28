@@ -3,8 +3,8 @@ package routes
 
 //in go lang it work on absolute path in it 
 import (
-	"fmt"
-	"net/http"
+
+
 	"github.com/SLANGERES/Anime-API/PKG/controllers"
 	"github.com/gorilla/mux"
 )

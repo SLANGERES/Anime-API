@@ -2,8 +2,9 @@ package models
 
 import (
 	"github.com/SLANGERES/Anime-API/PKG/config"
-	"github.com/jinzhu/gorm"
+
 	"gorm.io/gorm"
+
 )
 
 var db *gorm.DB
@@ -18,6 +19,7 @@ type Anime struct {
 func init() {
 	config.Connect()
 	db = config.GetDB()
+	
 	db.AutoMigrate(&Anime{})
 }
 

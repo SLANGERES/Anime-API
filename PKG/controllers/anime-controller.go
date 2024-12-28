@@ -79,7 +79,7 @@ func UpdateAnime(w http.ResponseWriter,r *http.Request){
 	}
 	db.Save(&animedetail)
 
-	res,_:=json.Marshal(b)
+	res,_:=json.Marshal(animedetail)
 
 	w.WriteHeader(http.StatusOK)
 
